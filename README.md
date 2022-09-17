@@ -26,4 +26,4 @@ In the Three-tier Client Server Architecture concept it is a presentation layer.
 
 The Web Application Backend is a layer which is called App Tier (Tier 2) and it is responsible for business logic of the application. The first tier Client communicate with the this secont layer via Web Api.
 
-The third Tier layer is a message server and database.
+The third Tier layer is a message server and database. It is a resource manager that stores data. The Web Application Backend interacts directly with the Database  when it need to add/remove new users, channels, groups. When users send messages it goes through the message server which makes sql queries to the database.
